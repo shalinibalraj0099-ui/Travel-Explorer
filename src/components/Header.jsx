@@ -1,0 +1,1 @@
+export default function Header(){return <header className="header"><a className="logo" href="#">elsewhere<span>.</span></a><nav><a href="#destinations">Destinations</a><a href="#journal">Travel journal</a><button>Plan a trip ↗</button></nav></header>}

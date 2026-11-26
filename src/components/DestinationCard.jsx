@@ -1,0 +1,1 @@
+export default function DestinationCard({place}){return <article className="destination"><div className={`destination-art ${place.tone}`}><span>{place.emoji}</span><small>{place.days}</small></div><div className="destination-info"><p>{place.region}</p><h3>{place.name}</h3><span>{place.description}</span></div><button aria-label={`Explore ${place.name}`}>↗</button></article>}

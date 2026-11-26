@@ -1,0 +1,7 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import DestinationCard from "./components/DestinationCard";
+import HighlightCard from "./components/HighlightCard";
+import "./App.css";
+const places=[{name:"Ooty",region:"Tamil Nadu, India",days:"2–3 DAYS",emoji:"🌿",tone:"sage",description:"Misty mornings and quiet mountain roads."},{name:"Jaipur",region:"Rajasthan, India",days:"3–4 DAYS",emoji:"🏛️",tone:"rose",description:"Colourful streets and timeless architecture."},{name:"Munnar",region:"Kerala, India",days:"2–4 DAYS",emoji:"⛰️",tone:"mint",description:"Tea gardens wrapped in soft green hills."}];
+export default function App(){return <div className="travel"><Header/><main><Hero/><section className="highlights"><HighlightCard icon="✈" title="Easy planning" text="Ideas for your next break"/><HighlightCard icon="⌖" title="Local favourites" text="Places worth slowing down for"/><HighlightCard icon="♡" title="Save inspiration" text="Build your own wish list"/></section><section className="destinations"><div className="section-head"><div><p className="eyebrow">A LITTLE INSPIRATION</p><h2>Find your somewhere</h2><p>Three places to start dreaming about.</p></div><a href="#">Explore all destinations ↗</a></div><div className="destination-grid">{places.map(place=><DestinationCard key={place.name} place={place}/>)}</div></section></main><footer>WANDER OFTEN · WONDER ALWAYS <span>Made for curious minds</span></footer></div>}

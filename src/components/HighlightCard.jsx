@@ -1,0 +1,1 @@
+export default function HighlightCard({icon,title,text}){return <article className="highlight"><span>{icon}</span><div><strong>{title}</strong><small>{text}</small></div></article>}
